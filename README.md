@@ -2,7 +2,19 @@
 
 ## :computer: Projeto
 
-Repositório com exercício sobre uma modalidade esportiva chamada Padel, sugestão de desafio da UFN.
+Repositório com exercício sobre uma modalidade esportiva chamada Padel, o desafio foi proposto durante a Academia DotNet ministrada pela `Universidade Franciscana - UFN`.
+
+## :page_facing_up: Desafio
+
+[Descrição do Desafio](https://github.com/ricardosma/academia_DotNet_5/blob/main/anotacoesAlexandre/aulas.md)
+
+## :white_check_mark: Decisões Técnicas
+
+Fiz a criação de pastas visando uma organização na estrutura do projeto, cada pasta represeta a definição de cada uma das classes utilizadas:
+
+- Models: essa pasta é responsável por armazenar as classes de modelo, nela foram criadas as classes `Pessoa` `AtletaPadel` e `TreinadorPadel`.
+- Utilities: esta pasta contem a classe `Validacao`, o seu objetivo é definir métodos auxiliares para as validações das propriedades.
+- Business: nesta pasta são armazenadas as classes `AtletaBusiness` e `TreinadorBusiness`, o objeto dessa implementação foi simular classes que atuem com regra de negócio, na minha interpretação achei que faria mais sentido essas definições.
 
 ## ✔️ Recursos Utilizados
 
