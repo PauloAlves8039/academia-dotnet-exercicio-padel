@@ -2,10 +2,22 @@
 {
     public class AtletaPadel : Pessoa
     {
-        public string PosicaoQuadra { get; set; }
-        public string Categoria { get; set; }
+        private string posicaoQuadra;
+        private string categoria;
 
-        public AtletaPadel(string nome, string email, DateTime dataNascimento, string posicao, string categoria) 
+        public string PosicaoQuadra
+        {
+            get { return posicaoQuadra; }
+            set { posicaoQuadra = value; }
+        }
+
+        public string Categoria
+        {
+            get { return categoria; }
+            set { categoria = value; }
+        }
+
+        public AtletaPadel(string nome, string email, DateOnly dataNascimento, string posicao, string categoria) 
             : base(nome, email, dataNascimento)
         {
             PosicaoQuadra = posicao;

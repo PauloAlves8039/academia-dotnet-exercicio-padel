@@ -34,9 +34,9 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Utilities
             return Regex.IsMatch(emailInformado, formatoDoEmail);
         }
 
-        public static bool ValidarDataDeNascimento(string dataInformada, out DateTime dataValida)
+        public static bool ValidarDataDeNascimento(string dataInformada, out DateOnly dataValida)
         {
-            if (DateTime.TryParseExact(dataInformada, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dataValida))
+            if (DateOnly.TryParseExact(dataInformada, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out dataValida))
             {
                 return true;
             }

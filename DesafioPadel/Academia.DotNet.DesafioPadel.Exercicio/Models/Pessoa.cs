@@ -2,11 +2,29 @@
 {
     public class Pessoa
     {
-        public string Nome { get; set; }
-        public string Email { get; set; }
-        public DateTime DataNascimento { get; set; }
+        private string nome;
+        private string email;
+        private DateOnly dataNascimento;
 
-        public Pessoa(string nome, string email, DateTime dataNascimento)
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
+
+        public DateOnly DataNascimento
+        {
+            get { return dataNascimento; }
+            set { dataNascimento = value; }
+        }
+
+        public Pessoa(string nome, string email, DateOnly dataNascimento)
         {
             Nome = nome;
             Email = email;
@@ -21,14 +39,17 @@
 
         public int Idade()
         {
-            var today = DateTime.Now;
-            var age = today.Year - DataNascimento.Year;
+            DateOnly hoje = DateOnly.FromDateTime(DateTime.Now);
+            int idade = hoje.Year - DataNascimento.Year;
 
-            if (today < DataNascimento.AddYears(age))
+            DateOnly aniversario = DataNascimento.AddYears(idade);
+
+            if (hoje < aniversario)
             {
-                age--;
+                idade--;
             }
-            return age;
+
+            return idade;
         }
 
         public string Sobrenome()

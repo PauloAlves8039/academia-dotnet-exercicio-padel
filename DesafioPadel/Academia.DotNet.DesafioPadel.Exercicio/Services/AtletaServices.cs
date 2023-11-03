@@ -1,15 +1,15 @@
 ﻿using Academia.DotNet.DesafioPadel.Exercicio.Models;
 using Academia.DotNet.DesafioPadel.Exercicio.Utilities;
 
-namespace Academia.DotNet.DesafioPadel.Exercicio.Business
+namespace Academia.DotNet.DesafioPadel.Exercicio.Services
 {
-    public class AtletaBusiness
+    public class AtletaServices
     {
         public static void CadastrarAtleta(List<AtletaPadel> listaDeAtletas)
         {
             string email = "";
             string nome = "";
-            DateTime dataNascimento = new DateTime();
+            DateOnly dataNascimento = new DateOnly();
             string posicaoQuadra = "";
             string categoria = "";
 

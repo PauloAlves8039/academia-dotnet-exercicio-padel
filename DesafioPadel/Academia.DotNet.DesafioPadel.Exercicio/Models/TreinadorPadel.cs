@@ -2,10 +2,22 @@
 {
     public class TreinadorPadel : Pessoa
     {
-        public string RegistroConselho { get; set; }
-        public string Clube { get; set; }
+        private string registroConselho;
+        private string clube;
 
-        public TreinadorPadel(string nome, string email, DateTime dataNascimento, string registroConselho, string clube) 
+        public string RegistroConselho
+        {
+            get { return registroConselho; }
+            set { registroConselho = value; }
+        }
+
+        public string Clube
+        {
+            get { return clube; }
+            set { clube = value; }
+        }
+
+        public TreinadorPadel(string nome, string email, DateOnly dataNascimento, string registroConselho, string clube) 
             : base(nome, email, dataNascimento)
         {
             RegistroConselho = registroConselho;
