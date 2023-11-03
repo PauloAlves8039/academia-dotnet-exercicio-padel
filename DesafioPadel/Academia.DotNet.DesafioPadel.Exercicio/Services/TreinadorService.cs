@@ -3,7 +3,7 @@ using Academia.DotNet.DesafioPadel.Exercicio.Utilities;
 
 namespace Academia.DotNet.DesafioPadel.Exercicio.Services
 {
-    public class TreinadorServices
+    public class TreinadorService
     {
         public static void CadastrarTreinador(List<TreinadorPadel> listaDeTreinadores)
         {

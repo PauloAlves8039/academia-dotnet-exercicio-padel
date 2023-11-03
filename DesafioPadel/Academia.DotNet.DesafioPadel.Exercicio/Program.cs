@@ -29,28 +29,28 @@ internal class Program
             {
                 case "1":
                     Console.WriteLine("Cadastro de atleta");
-                    AtletaServices.CadastrarAtleta(listaDeAtletas);
+                    AtletaService.CadastrarAtleta(listaDeAtletas);
                     break;
                 case "2":
                     Console.WriteLine("Listagem de atletas");
-                    AtletaServices.ListarAtletas(listaDeAtletas);
+                    AtletaService.ListarAtletas(listaDeAtletas);
 
                     break;
                 case "3":
                     Console.WriteLine("Remoção de atleta");
-                    AtletaServices.RemoverAtleta(listaDeAtletas);
+                    AtletaService.RemoverAtleta(listaDeAtletas);
                     break;
                 case "4":
                     Console.WriteLine("Cadastro de treinador");
-                    TreinadorServices.CadastrarTreinador(listaDeTreinadores);
+                    TreinadorService.CadastrarTreinador(listaDeTreinadores);
                     break;
                 case "5":
                     Console.WriteLine("Listagem de treinadores");
-                    TreinadorServices.ListarTreinadores(listaDeTreinadores);
+                    TreinadorService.ListarTreinadores(listaDeTreinadores);
                     break;
                 case "6":
                     Console.WriteLine("Remoção de treinador");
-                    TreinadorServices.RemoverTreinador(listaDeTreinadores);
+                    TreinadorService.RemoverTreinador(listaDeTreinadores);
                     break;
                 case "7":
                     break;
