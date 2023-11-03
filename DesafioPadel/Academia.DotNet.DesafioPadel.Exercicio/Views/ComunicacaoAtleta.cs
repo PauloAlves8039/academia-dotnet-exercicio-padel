@@ -1,9 +1,9 @@
 ﻿using Academia.DotNet.DesafioPadel.Exercicio.Models;
-using Academia.DotNet.DesafioPadel.Exercicio.Utilities;
+using Academia.DotNet.DesafioPadel.Exercicio.Utils;
 
-namespace Academia.DotNet.DesafioPadel.Exercicio.Services
+namespace Academia.DotNet.DesafioPadel.Exercicio.Views
 {
-    public class AtletaService
+    public class ComunicacaoAtleta
     {
         public static void CadastrarAtleta(List<AtletaPadel> listaDeAtletas)
         {
@@ -25,7 +25,7 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Services
                 {
                     Console.Write("Informe o email: ");
                     email = Console.ReadLine();
-                    emailValidado = Validacao.ValidarFormatoDoEmail(email);
+                    emailValidado = Utilitario.ValidarFormatoDoEmail(email);
 
                     if (!emailValidado)
                     {
@@ -34,11 +34,20 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Services
                     }
                 }
 
+                if (Pessoa.EstaContido(email, listaDeAtletas))
+                {
+                    Console.WriteLine("Email já existe! Não é possível adicionar o atleta.");
+                    Console.WriteLine("Por favor, verifique o email ou escolha outro.");
+                    emailValidado = false;
+                    continue;
+                }
+
+
                 if (!nomeValidado)
                 {
                     Console.Write("Nome: ");
                     nome = Console.ReadLine().ToUpper();
-                    nomeValidado = Validacao.ValidarNome(nome);
+                    nomeValidado = Utilitario.ValidarNome(nome);
 
                     if (!nomeValidado)
                     {
@@ -51,7 +60,7 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Services
                 {
                     Console.Write("Data nascimento [dd/mm/aaaa]: ");
                     string dataInformada = Console.ReadLine();
-                    dataValidada = Validacao.ValidarDataDeNascimento(dataInformada, out dataNascimento);
+                    dataValidada = Utilitario.ValidarDataDeNascimento(dataInformada, out dataNascimento);
 
                     if (!dataValidada)
                     {
@@ -63,7 +72,7 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Services
                 {
                     Console.Write("Posição na quadra [direita ou esquerda]: ");
                     posicaoQuadra = Console.ReadLine().ToUpper();
-                    posicaoValidada = Validacao.ValidarPosicaoQuadra(posicaoQuadra);
+                    posicaoValidada = Utilitario.ValidarPosicaoQuadra(posicaoQuadra);
 
                     if (!posicaoValidada)
                     {
@@ -75,7 +84,7 @@ namespace Academia.DotNet.DesafioPadel.Exercicio.Services
                 {
                     Console.Write("Categoria [1 ou 2 ou 3 ou 4 ou 5]: ");
                     categoria = Console.ReadLine();
-                    categoriaValidada = Validacao.ValidarCategoria(categoria);
+                    categoriaValidada = Utilitario.ValidarCategoria(categoria);
 
                     if (!categoriaValidada)
                     {

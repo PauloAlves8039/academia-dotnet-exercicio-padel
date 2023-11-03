@@ -1,9 +1,9 @@
 ﻿using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace Academia.DotNet.DesafioPadel.Exercicio.Utilities
+namespace Academia.DotNet.DesafioPadel.Exercicio.Utils
 {
-    public class Validacao
+    public class Utilitario
     {
         public static bool ValidarNome(string nomeInformado)
         {

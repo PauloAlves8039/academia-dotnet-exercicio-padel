@@ -1,4 +1,4 @@
-﻿using Academia.DotNet.DesafioPadel.Exercicio.Services;
+﻿using Academia.DotNet.DesafioPadel.Exercicio.Views;
 using Academia.DotNet.DesafioPadel.Exercicio.Models;
 
 internal class Program
@@ -29,28 +29,28 @@ internal class Program
             {
                 case "1":
                     Console.WriteLine("Cadastro de atleta");
-                    AtletaService.CadastrarAtleta(listaDeAtletas);
+                    ComunicacaoAtleta.CadastrarAtleta(listaDeAtletas);
                     break;
                 case "2":
                     Console.WriteLine("Listagem de atletas");
-                    AtletaService.ListarAtletas(listaDeAtletas);
+                    ComunicacaoAtleta.ListarAtletas(listaDeAtletas);
 
                     break;
                 case "3":
                     Console.WriteLine("Remoção de atleta");
-                    AtletaService.RemoverAtleta(listaDeAtletas);
+                    ComunicacaoAtleta.RemoverAtleta(listaDeAtletas);
                     break;
                 case "4":
                     Console.WriteLine("Cadastro de treinador");
-                    TreinadorService.CadastrarTreinador(listaDeTreinadores);
+                    ComunicaoTreinador.CadastrarTreinador(listaDeTreinadores);
                     break;
                 case "5":
                     Console.WriteLine("Listagem de treinadores");
-                    TreinadorService.ListarTreinadores(listaDeTreinadores);
+                    ComunicaoTreinador.ListarTreinadores(listaDeTreinadores);
                     break;
                 case "6":
                     Console.WriteLine("Remoção de treinador");
-                    TreinadorService.RemoverTreinador(listaDeTreinadores);
+                    ComunicaoTreinador.RemoverTreinador(listaDeTreinadores);
                     break;
                 case "7":
                     break;

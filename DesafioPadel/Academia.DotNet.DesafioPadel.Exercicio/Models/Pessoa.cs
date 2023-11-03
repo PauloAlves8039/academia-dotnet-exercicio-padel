@@ -91,5 +91,26 @@
 
             return -1;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is null || ReferenceEquals(this, obj))
+            {
+                return false;
+            }
+
+            if (obj is Pessoa pessoa)
+            {
+                return Email.Equals(pessoa.Email, StringComparison.OrdinalIgnoreCase);
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Email.GetHashCode(StringComparison.OrdinalIgnoreCase);
+        }
+
     }
 }
