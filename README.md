@@ -12,9 +12,9 @@ Repositório com exercício sobre uma modalidade esportiva chamada Padel, o desa
 
 Fiz a criação de pastas visando uma organização na estrutura do projeto, cada pasta represeta a definição de cada uma das classes utilizadas:
 
-- Models: essa pasta é responsável por armazenar as classes de modelo, nela foram criadas as classes `Pessoa` `AtletaPadel` e `TreinadorPadel`.
-- Utilities: esta pasta contem a classe `Validacao`, o seu objetivo é definir métodos auxiliares para as validações das propriedades.
-- Business: nesta pasta são armazenadas as classes `AtletaBusiness` e `TreinadorBusiness`, o objeto dessa implementação foi simular classes que atuem com regra de negócio, na minha interpretação achei que faria mais sentido essas definições.
+- <b>Models</b>: essa pasta é responsável por armazenar as classes de modelo, nela foram criadas as classes `Pessoa` `AtletaPadel` e `TreinadorPadel`.
+- <b>Services</b>: nesta pasta são armazenadas as classes `AtletaService` e `TreinadorService`, optei por essa implementação para simular classes que atuem com uso de regras de negócios.
+- <b>Utilities</b>: esta pasta contem a classe `Validacao`, o seu objetivo é definir métodos auxiliares para as validações das propriedades.
 
 ## ✔️ Recursos Utilizados
 
