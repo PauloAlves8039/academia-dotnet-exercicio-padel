@@ -13,7 +13,7 @@ Repositório com exercício sobre uma modalidade esportiva chamada Padel, o desa
 Fiz a criação de pastas visando uma organização na estrutura do projeto, cada pasta represeta a definição de cada uma das classes utilizadas:
 
 - <b>Models</b>: essa pasta é responsável por armazenar as classes de modelo, nela foram criadas as classes `Pessoa` `AtletaPadel` e `TreinadorPadel`.
-- <b>Views</b>: nesta pasta são armazenadas as classes `ComunicacaoAtleta` e `ComunicaoTreinador`, optei por essa implementação para seguir com a sugestão do professor em simular um pouco da estrutura de projetos MVC.
+- <b>Communications</b>: nesta pasta são armazenadas as classes `ComunicacaoAtleta` e `ComunicaoTreinador`, que possuem métodos responsáveis pela regra de negócio da aplicação, eu optei em usar essa nomeclatura para tentar seguir o mesmo exemplo apresentado em aula.
 - <b>Utils</b>: esta pasta contem a classe `Utilitario`, o seu objetivo é definir métodos auxiliares para as validações das propriedades.
 
 ## ✔️ Recursos Utilizados

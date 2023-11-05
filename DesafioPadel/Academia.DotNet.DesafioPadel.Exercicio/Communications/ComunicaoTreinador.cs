@@ -1,7 +1,7 @@
 ﻿using Academia.DotNet.DesafioPadel.Exercicio.Models;
 using Academia.DotNet.DesafioPadel.Exercicio.Utils;
 
-namespace Academia.DotNet.DesafioPadel.Exercicio.Views
+namespace Academia.DotNet.DesafioPadel.Exercicio.Communications
 {
     public class ComunicaoTreinador
     {

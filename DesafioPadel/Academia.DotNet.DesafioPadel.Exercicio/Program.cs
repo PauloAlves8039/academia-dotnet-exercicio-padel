@@ -1,4 +1,4 @@
-﻿using Academia.DotNet.DesafioPadel.Exercicio.Views;
+﻿using Academia.DotNet.DesafioPadel.Exercicio.Communications;
 using Academia.DotNet.DesafioPadel.Exercicio.Models;
 
 internal class Program
